@@ -1,0 +1,46 @@
+﻿@page
+@model MyPizzaRazorPages.Pages.Pizzas.CreatePizzaModel
+@{
+}
+<h1>Opret en ny Pizza</h1>
+
+<div class="row">
+    <div class="col-md-6">
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="@Model.Pizza.Number" class="control-label">Nummer</label><br>
+                <input asp-for="@Model.Pizza.Number" class="form-control" /><br>
+            </div>
+
+            <div class="form-group">
+                <label>Navn</label><br>
+                <input asp-for="@Model.Pizza.Name" class="form-control" /><br />
+            </div>
+
+            <div class="form-group">
+                <label>Beskrivelse</label><br>
+                <input asp-for="@Model.Pizza.Description" class="form-control" /><br />
+            </div>
+
+            <div class="form-group">
+                <label>Pris</label><br>
+                <input asp-for="@Model.Pizza.Price" class="form-control" /><br />
+            </div>
+
+            <div class="form-group">
+                <label>Vegansk</label><br>
+                <input asp-for="@Model.Pizza.IsVegan" class="form-control" /><br />
+            </div>
+
+            <div class="form-group">
+                <label>DeepPan</label><br>
+                <input asp-for="@Model.Pizza.DeepPan" class="form-control" /><br />
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Opret Pizza" />
+            </div>
+
+        </form>
+    </div>
+</div>
