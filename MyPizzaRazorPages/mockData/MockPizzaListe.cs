@@ -5,7 +5,7 @@ namespace MyPizzaRazorPages.mockData
     public class MockPizzaListe
     {
         // instans felt med default pizzaer
-        private static List<Pizza> _pizzaer = new List<Pizza>()
+        private List<Pizza> _pizzaer = new List<Pizza>()
         {
             new Pizza(10, "PetersPizza", "Very special", 54, false, false),
             new Pizza(12, "JakobPizza", "Very Hot", 51, false, false),

@@ -24,7 +24,8 @@
 
             <div class="form-group">
                 <label>Pris</label><br>
-                <input asp-for="@Model.Pizza.Price" class="form-control" /><br />
+                <input asp-for="@Model.Price" class="form-control" /><br />
+                <span asp-validation-for="@Model.Price" class="text-danger"></span>
             </div>
 
             <div class="form-group">
