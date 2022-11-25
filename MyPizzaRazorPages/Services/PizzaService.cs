@@ -12,6 +12,16 @@ namespace MyPizzaRazorPages.Services
             _pizzaer.Add(pizza);
         }
 
+        public void DeletePizza(int nummer)
+        {
+            _pizzaer.DeletePizza(nummer);
+        }
+
+        public Pizza FindPizza(int nummer)
+        {
+            return _pizzaer.FindPizza(nummer);
+        }
+
         public List<Pizza> GetAllPizzas()
         {
             return _pizzaer.GetAllPizzas();

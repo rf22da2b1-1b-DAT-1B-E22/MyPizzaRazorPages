@@ -7,5 +7,9 @@ namespace MyPizzaRazorPages.Services
         public List<Pizza> GetAllPizzas();
 
         public void Add(Pizza pizza);
+
+        public Pizza FindPizza(int nummer);
+
+        public void DeletePizza(int nummer);
     }
 }

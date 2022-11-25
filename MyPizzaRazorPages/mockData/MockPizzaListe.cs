@@ -1,4 +1,5 @@
-﻿using MyPizzaRazorPages.model;
+﻿using Microsoft.AspNetCore.Server.IIS.Core;
+using MyPizzaRazorPages.model;
 
 namespace MyPizzaRazorPages.mockData
 {
@@ -23,6 +24,25 @@ namespace MyPizzaRazorPages.mockData
         {
             _pizzaer.Add(pizza);
 
+        }
+
+        public void DeletePizza(int nummer)
+        {
+            Pizza sletPizza = FindPizza(nummer);
+            _pizzaer.Remove(sletPizza);
+        }
+
+        public Pizza FindPizza(int nummer)
+        {
+            foreach(Pizza p in _pizzaer)
+            {
+                if (p.Number == nummer)
+                {
+                    return p;
+                }
+            }
+
+            throw new KeyNotFoundException();
         }
     }
 }

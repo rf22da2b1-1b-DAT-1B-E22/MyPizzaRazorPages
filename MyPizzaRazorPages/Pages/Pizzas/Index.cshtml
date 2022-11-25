@@ -25,6 +25,8 @@
                 <td>@p.Price</td>
                 <td>@p.IsVegan</td>
                 <td>@p.DeepPan</td>
+
+                <td><a asp-page="DeletePizza" asp-route-id="@p.Number">Delete</a></td>
             </tr>
         }
     </tbody>
