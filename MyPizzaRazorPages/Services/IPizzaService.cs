@@ -11,5 +11,7 @@ namespace MyPizzaRazorPages.Services
         public Pizza FindPizza(int nummer);
 
         public void DeletePizza(int nummer);
+
+        public void EditPizza(Pizza newValues);
     }
 }

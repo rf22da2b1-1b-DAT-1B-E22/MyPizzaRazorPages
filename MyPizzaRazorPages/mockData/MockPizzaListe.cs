@@ -44,5 +44,17 @@ namespace MyPizzaRazorPages.mockData
 
             throw new KeyNotFoundException();
         }
+
+        public void EditPizza(Pizza newValues)
+        {
+            Pizza editPizza = FindPizza(newValues.Number);
+
+            editPizza.Name = newValues.Name;
+            editPizza.Description = newValues.Description;
+            editPizza.Number = newValues.Number;
+            editPizza.Price = newValues.Price;
+            editPizza.IsVegan = newValues.IsVegan;
+            editPizza.DeepPan = newValues.DeepPan;
+        }
     }
 }
